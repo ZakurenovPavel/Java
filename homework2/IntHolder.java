@@ -39,14 +39,14 @@ public class IntHolder {
   }
 
   @Override
-  public boolean equals(Object Su) {
-    if (this == Su) {
+  public boolean equals(Object other) {
+    if (this == other) {
       return true;
     }
-    if (Su == null || getClass() != Su.getClass()) {
+    if (other == null || getClass() != other.getClass()) {
       return false;
     }
-    IntHolder supremum = (IntHolder) Su;
+    IntHolder supremum = (IntHolder) other;
     return x == supremum.x;
   }
 

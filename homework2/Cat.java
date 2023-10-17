@@ -23,18 +23,7 @@ public class Cat extends Pet {
   }
 
   public enum Fodder {
-    Cheap,
-    Expensive
-  }
-
-  public enum breed {
-    Savannah,
-    Maine_Coon,
-    Chauzy,
-    Ragamuffin,
-    Norwegian_Forest_and_Siberian_Cat,
-    British_Shorthair,
-    Chartreuse,
-    Pixie_Bob
+    CHEAP,
+    EXPENSIVE
   }
 }

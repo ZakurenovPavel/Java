@@ -23,15 +23,7 @@ public class Dog extends Pet {
   }
 
   public enum Fodder {
-    Cheap,
-    Expensive
-  }
-
-  public enum breed {
-    Hound_Dogs,
-    Sporting_Dogs,
-    Herding_Dogs,
-    Terrier_Dogs,
-    Working_Dogs
+    CHEAP,
+    EXPENSIVE
   }
 }

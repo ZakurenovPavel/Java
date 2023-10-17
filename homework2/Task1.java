@@ -4,21 +4,17 @@ public class Task1 {
     System.out.println(equals("Hello", "hello"));
     System.out.println(replace("Hello", "o", "a"));
     System.out.println(format("Zakurenov", 10, "java"));
-    System.out.println(isPalindrome("QwertyYTREWQ"));
+    System.out.println(isPalindrome("QwewQ"));
   }
 
   //task 1
   static boolean equals(String s, String t) {
-    if (s.equalsIgnoreCase(t)) {
-      return true;
-    } else {
-      return false;
-    }
+    return (s.equalsIgnoreCase(t));
   }
 
+
   static String replace(String str, String oldStr, String newStr) {
-    str = str.replace(oldStr, newStr);
-    return str;
+    return str.replace(oldStr, newStr);
   }
 
   static String format(String surname, int mark, String subject) {
@@ -26,9 +22,15 @@ public class Task1 {
   }
 
   static boolean isPalindrome(String str) {
-    return str.replaceAll("\\W", "")
-        .equalsIgnoreCase(new StringBuilder(str.replaceAll("\\W", "")).reverse().toString());
+    int len = str.length();
+    if (len % 2 == 0) {
+      for (int i = 0; i < len / 2; i++) {
+        if (str.charAt(i) != str.charAt(len - 1 - i)) {
+          return false;
+        }
+      }
+    }
+    return true;
   }
-
 }
 

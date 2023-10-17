@@ -1,12 +1,11 @@
 public class PetTest {
 
   public static void main(String[] args) {
-    Cat myCat = new Cat("Barsik", 7, 5, "Paul", "Maine_Coon", Cat.Fodder.Expensive);
-    System.out.println(myCat.say());
+    Cat myCat = new Cat("Barsik", 7, 5, "Paul", "Maine_Coon", Cat.Fodder.EXPENSIVE);
     System.out.println(myCat.walk());
     System.out.println(myCat.walk("Mikhail"));
 
-    Dog myDog = new Dog("Martin", 22, 8, "Sergei", "Terrier_Dogs", Dog.Fodder.Cheap);
+    Dog myDog = new Dog("Martin", 22, 8, "Sergei", "Terrier_Dogs", Dog.Fodder.CHEAP);
     System.out.println(myDog.say());
     System.out.println(myDog.walk());
     System.out.println(myDog.walk("Helen"));
