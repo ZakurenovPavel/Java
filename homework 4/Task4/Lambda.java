@@ -16,14 +16,14 @@ public class Lambda {
         System.out.println("Ноль");
       }
     };
-    myInterface.Sign(1);
-    myInterface.Sign(-1);
-    myInterface.Sign(0);
+    myInterface.sign(1);
+    myInterface.sign(-1);
+    myInterface.sign(0);
   }
 
   @FunctionalInterface
   interface MyInterface {
 
-    void Sign(int x);
+    void sign(int x);
   }
 }

@@ -4,7 +4,7 @@ public class Test {
 
   public static void main(String[] args) {
     TextAnalyzer[] analyzers = {
-        new SpamAnalyzer(new String[]{"SI"}),
+        new SpamAnalyzer(new String[]{"siiiiiiuuuu"}),
         new NegativeTextAnalyzer(),
         new TooLongTextAnalyzer(30)
     };
@@ -12,7 +12,7 @@ public class Test {
         "Чекменёв легенда",
         "Дедлайн по джаве:(",
         "Для любого эпсилон больше 0 существует номер",
-        "Cristiano Ronaldo SI"
+        "Cristiano Ronaldo siiiiiiuuuu"
     };
     for (String comment : comments) {
       Label label = checkLabels(analyzers, comment);

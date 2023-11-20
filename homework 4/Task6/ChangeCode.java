@@ -18,12 +18,10 @@ public class ChangeCode {
       System.out.println("Указатель не может указывать на null!");
     } catch (IndexOutOfBoundsException ex) {
       System.out.println("Массив выходит за пределы своего размера!");
-    } catch (Throwable ex) {
-      System.out.println("Что-то пошло не так...");
-    }
+    } 
   }
 
-  public static void printSum(Integer a, Integer b) throws NullPointerException {
+  public static void printSum(Integer a, Integer b) {
     System.out.println(a + b);
   }
 
