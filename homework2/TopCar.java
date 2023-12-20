@@ -13,7 +13,7 @@ public class TopCar {
   private TopCar(Builder builder) {
     this.maxFuel = builder.maxFuel;
     this.model = builder.model;
-    this.engine = new TopCar.Engine(10);
+    this.engine = new TopCar.Engine(builder.fuelConsumption);
     this.colour = builder.colour;
     this.fuel = builder.fuel;
     this.mileage = builder.mileage;
@@ -21,7 +21,7 @@ public class TopCar {
 
 
   public static void main(String[] args) {
-    TopCar carInMyOwn = new TopCar.Builder(200, "Tesla")
+    TopCar carInMyOwn = new TopCar.Builder(200, "Tesla", 10)
         .colour("blue")
         .fuel(5)
         .mileage(30)
@@ -123,14 +123,16 @@ public class TopCar {
 
     private final int maxFuel;
     private final String model;
+    private final int fuelConsumption;
     private TopCar.Engine engine;
     private String colour;
     private int fuel;
     private int mileage;
 
-    public Builder(int maxFuel, String model) {
+    public Builder(int maxFuel, String model, int fuelConsumption) {
       this.maxFuel = maxFuel;
       this.model = model;
+      this.fuelConsumption = fuelConsumption;
     }
 
     private Builder calories(TopCar.Engine val) {
@@ -161,10 +163,10 @@ public class TopCar {
   private class Engine {
 
     boolean state;
-    private int fuelConsumption;
+    private final int fuelConsumption;
 
     public Engine(int fuelConsumption) {
-      this.fuelConsumption = fuelConsumption;
+      this.fuelConsumption = 10;
       this.state = false;
     }
 
