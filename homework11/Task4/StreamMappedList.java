@@ -16,7 +16,7 @@ public class StreamMappedList {
     Optional<Integer> answer2 = processElements(nums2, i -> i > k,  Integer::signum, Integer::sum);
     answer.ifPresent(System.out::println);
     answer2.ifPresent(System.out::println);
-    //подсчитываем количество чисел массива положительных целых чисел, больших данного .
+    //подсчитываем количество положительных целых чисел массива, больших данного .
   }
 
   public static <T, R> Optional<R> processElements(List<T> elements,
