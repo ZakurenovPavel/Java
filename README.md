@@ -1,2 +1,1 @@
-# Java
-Homeworks
+# Homework 6
